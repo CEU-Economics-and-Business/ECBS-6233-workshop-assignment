@@ -61,3 +61,5 @@ label define any ///
 	3 "afood within 0.25 0.5 miles"
 label values afood any
 
+save "data/derived/finaldata.dta", replace 
+
