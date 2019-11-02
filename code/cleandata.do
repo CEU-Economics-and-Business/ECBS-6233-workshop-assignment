@@ -39,3 +39,25 @@ forvalues year=2001/2007{
 	append using "`temp`year'_dataset'"
 
 }
+
+* Destring the fast food variables
+destring ffood* afood, replace
+
+
+* Apply variable labels to the data set
+label var ffood "Fast food"
+label define fast ///
+	0 "No ffood" /// 
+	1 "ffood within 0.1 miles" ///
+	2 "ffood 0.10-0.25 miles" ///
+	3 "ffood within 0.25-0.5 miles"
+label values ffood fast
+
+label var afood "Any restaurant"
+label define any ///
+	0 "No afood" ///
+	1 "afood within 0.1 miles" ///
+	2 "afood 0.10-0.25 miles" ///
+	3 "afood within 0.25 0.5 miles"
+label values afood any
+
