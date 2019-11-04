@@ -5,7 +5,7 @@ set more off
 
 
 
-** 1. Loop over the file and merge the data sets
+*Loop over the file and merge the data sets
 
 * Merge files over a loop.
 forvalues year=1999/2007 {
@@ -48,17 +48,17 @@ destring ffood* afood, replace
 label var ffood "Fast food"
 label define fast ///
 	0 "No ffood" /// 
-	1 "ffood within 0.1 miles" ///
-	2 "ffood 0.10-0.25 miles" ///
-	3 "ffood within 0.25-0.5 miles"
+	1 "fast food within 0.1 miles" ///
+	2 "fast food 0.10-0.25 miles" ///
+	3 "fast food within 0.25-0.5 miles"
 label values ffood fast
 
 label var afood "Any restaurant"
 label define any ///
 	0 "No afood" ///
-	1 "afood within 0.1 miles" ///
-	2 "afood 0.10-0.25 miles" ///
-	3 "afood within 0.25 0.5 miles"
+	1 "any restaurant within 0.1 miles" ///
+	2 "any restaurant 0.10-0.25 miles" ///
+	3 "any restaurant within 0.25 0.5 miles"
 label values afood any
 
 save "data/derived/finaldata.dta", replace 
