@@ -1,9 +1,6 @@
 
 
 clear all 
-set more off
-
-
 
 *Loop over the file and merge the data sets
 
@@ -40,7 +37,7 @@ forvalues year=2001/2007{
 
 }
 
-* Destring the fast food variables
+* Destring variables
 destring ffood* afood, replace
 
 
