@@ -1,0 +1,77 @@
+\documentclass[11pt]{article}
+%\usepackage{booktabs}
+%\usepackage{caption}
+\usepackage{float}
+
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+
+\title{Replication: Currie et al.: Fast-Food, Obesity, Weight Gain}
+\date{}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+\newpage
+\begin{table}[H]
+\caption{\label{fig: sum_stats} Summary Statistics for California School Data}
+\vspace{-0.3cm}
+
+\begin{center}\tiny
+\input{../tables/table1A.tex}
+
+\end{center}
+\vspace{-0.3cm}
+\par
+\begin{minipage}{ \linewidth}
+\scriptsize{Notes: This table lists all the controls used for the school regressions, with the exception of year and school fixed
+effects.}
+\end{minipage}
+
+\end{table}
+
+
+
+\begin{table}[H]
+\caption{\label{fig: sum_stats} Summary Statistics for California School Data}
+\vspace{-0.3cm}
+
+\begin{center}\small
+\input{../tables/table2.tex}
+
+\end{center}
+\vspace{-0.3cm}
+\par
+\begin{minipage}{ \linewidth}
+\scriptsize{Notes: This table lists all the controls used for the school regressions, with the exception of year and school fixed
+effects.}
+\end{minipage}
+
+\end{table}
+
+
+
+\begin{figure}[H]
+\vspace{0.5cm}
+\begin{center}
+\caption{\label{fig: obes_schools} Impact of Fast Food on Obesity in Schools}
+\includegraphics[width=130 mm, height=90 mm]{../figures/figure1A.png} 
+\end{center}
+\vspace{-0.3cm}
+\par
+\begin{minipage}{ \linewidth}
+\scriptsize{Note: The blue vertical bar represent the 95 \% confidence interval using panel estimates; the red dashed vertical bar represent the 95 \% confidence interval using cross-sectional estimates}
+\end{minipage}
+
+\end{figure}
+
+
+
+
+\end{document}  

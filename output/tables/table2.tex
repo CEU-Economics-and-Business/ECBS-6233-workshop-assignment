@@ -1,0 +1,36 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{c}}
+\hline\hline
+                    &\multicolumn{4}{c}{Percent of ninth graders that are obese }                           \\
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         \\
+\hline
+Fast food within 0.10 miles&       3.081\sym{*}  &       1.737\sym{**} &       6.270\sym{**} &       6.334\sym{**} \\
+                    &     (1.607)         &     (0.880)         &     (2.918)         &     (2.875)         \\
+[1em]
+Other restaurant within 0.10 miles&       0.682         &      -0.631         &       1.026         &       1.003         \\
+                    &     (1.031)         &     (0.577)         &     (1.820)         &     (1.824)         \\
+[1em]
+Fast food within 0.25 miles&      -2.486\sym{**} &      -0.907\sym{*}  &      -1.830         &      -1.795         \\
+                    &     (1.111)         &     (0.548)         &     (1.197)         &     (1.210)         \\
+[1em]
+Other restaurant within 0.25 miles&       2.142\sym{**} &       0.041         &       0.262         &       0.037         \\
+                    &     (0.876)         &     (0.493)         &     (0.972)         &     (0.943)         \\
+[1em]
+Fast food within 0.5 miles&       1.390\sym{*}  &      -0.045         &      -1.089         &      -0.831         \\
+                    &     (0.822)         &     (0.451)         &     (1.109)         &     (1.087)         \\
+[1em]
+Other restaurant within 0.5 miles&       1.227         &       0.539         &      -0.397         &      -0.415         \\
+                    &     (0.841)         &     (0.493)         &     (0.871)         &     (0.816)         \\
+\hline
+Implied cumulative effect \\ to fast food restaurant within 0.1 miles&      1.9852         &       .7854         &      3.3519         &      3.7079         \\
+ (standard errors)  &       1.509         &         .86         &       3.037         &       2.984         \\
+School FE           &                     &                     &  \checkmark         &  \checkmark         \\
+Year FE             &                     &  \checkmark         &                     &  \checkmark         \\
+Census Controls     &                     &  \checkmark         &                     &  \checkmark         \\
+School Controls     &                     &  \checkmark         &                     &  \checkmark         \\
+N                   &        8373         &        8373         &        8373         &        8373         \\
+R2                  &       0.021         &       0.417         &       0.644         &       0.651         \\
+\hline\hline
+\end{tabular}
+}
