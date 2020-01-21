@@ -6,8 +6,6 @@ do code/scalars.do
 *install lean2 scheme
 set scheme lean2
 
-tab year, gen (dum_year)
-
 
 matrix grund = [.]
 
