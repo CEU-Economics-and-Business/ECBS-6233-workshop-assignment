@@ -2,6 +2,7 @@
 %\usepackage{booktabs}
 %\usepackage{caption}
 \usepackage{float}
+\usepackage{adjustbox}
 
 \usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
 \geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
@@ -49,8 +50,10 @@ effects.}
 \vspace{-0.3cm}
 \par
 \begin{minipage}{ \linewidth}
-\scriptsize{Notes: This table lists all the controls used for the school regressions, with the exception of year and school fixed
-effects.}
+\scriptsize{Notes: Each column is a different OLS regression. The regressions are weighted by the number of students. Thedependent variable is the percentage of students in the ninth grade who are classified as obese. The mean of thedependent variable is 32.9494. The unit of observation is a school-grade-year for schools in California in 1999 andthe period 2001 -- 2007. Entries in rows 1, 3, and 5 are the coefficient on a dummy for the existence of a fast foodrestaurant at a given distance from the school. Entries in rows 2, 4, and 6 are coefficients on the dummy for the existenceof a non-fast food restaurant at a given distance from the school. The implied cumulative effect reported in thetable is the sum of the coefficients in rows 1, 3, and 5, and is the total effect of exposure to a fast food restaurant at0.1 mile compared to no exposure to fast food restaurants within 0.5 miles. The school-level controls are from theCommon Core of Data, with the addition of Star test scores for the ninth grade. The census block controls are fromthe closest block to the address of the school. Table 1A lists the school and census block controls. Standard errorsclustered by school are in parentheses. \\\
+ *** Significant at the 1 percent level,\\\
+  ** Significant at the 5 percent level, \\\
+  * Significant at the 10 percent level.}
 \end{minipage}
 
 \end{table}
@@ -66,12 +69,30 @@ effects.}
 \vspace{-0.3cm}
 \par
 \begin{minipage}{ \linewidth}
-\scriptsize{Note: The blue vertical bar represent the 95 \% confidence interval using panel estimates; the red dashed vertical bar represent the 95 \% confidence interval using cross-sectional estimates}
+\scriptsize{Notes: The blue vertical bar represent the 95 \% confidence interval using panel estimates; the red dashed vertical bar represent the 95 \% confidence interval using cross-sectional estimates}
 \end{minipage}
 
 \end{figure}
 
 
+\begin{table}[H]
+%\resizebox{5cm}{!}{
 
+\caption{\label{fig: low_readability} A table not easy to read}
+\vspace{-0.3cm}
+\begin{center}
+
+\input{../tables/table2_low_readability.tex}
+
+
+\vspace{-0.3cm}
+\end{center}
+
+\par
+\begin{minipage}{ \linewidth}
+\scriptsize{Notes: To be added.}
+\end{minipage}
+%}
+\end{table}
 
 \end{document}  
